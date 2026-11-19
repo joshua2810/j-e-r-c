@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <link rel="stylesheet" href="{% static 'romo/style.css' %}">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>Registra tus datos</h1>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <ul>
+                <li><a href="inicio">Inicio</a></li>
+                <li><a href="registro">registro</a></li>
+                <li><a href="#">dos</a></li>
+                <li><a href="#">tres</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form method="post">
+        <label>nombre</label>
+        <input type="text" name="nombre" placeholder="Escribe tu nombre..." required>
+        <label>apellido Paterno</label>
+        <input type="text" name="apellido_p" placeholder="Escribe tu apellido Paterno..." required>
+        <label>Apellido Materno</label>
+        <input type="text" name="apellido_m" placeholder="Escribe tu apellido Materno..." >
+        <label>Edad</label>
+        <input type="number" name="Edad" min="14" max="20" placeholder="Escribe tu edad..." required>
+        <button type="submit"> Guardar </button>
+    </form>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>𝙃𝙚𝙘𝙝𝙤 𝙥𝙤𝙧:
+           𝙅𝙤𝙨𝙝𝙪𝙖 𝙀𝙢𝙢𝙖𝙣𝙪𝙚𝙡 𝙍𝙤𝙢𝙤 𝘾𝙖𝙧𝙧𝙖𝙣𝙯𝙖</p>
+    </footer>
+
+</body>
+</html>
