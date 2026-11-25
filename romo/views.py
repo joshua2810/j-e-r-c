@@ -5,3 +5,6 @@ def inicio  (request) :
 
 def registro (request) :
     return render (request, "romo/formregistro.html")
+
+def registro2 (request) :
+    return render (request, "romo/registro2.html")

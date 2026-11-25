@@ -20,29 +20,40 @@
             <ul>
                 <li><a href="inicio">Inicio</a></li>
                 <li><a href="registro">registro</a></li>
-                <li><a href="#">dos</a></li>
+                <li><a href="registro2">registro 2</a></li>
                 <li><a href="#">tres</a></li>
             </ul>
         </nav>
     </header>
     <form method="post">
-        <label>nombre</label>
+        <label>Nombre</label>
         <input type="text" name="nombre" placeholder="Escribe tu nombre..." required>
-        <label>apellido Paterno</label>
-        <input type="text" name="apellido_p" placeholder="Escribe tu apellido Paterno..." required>
+        <br><br>
+
+        <label>Apellido Paterno</label>
+        <input type="text" name="apellido_p" placeholder="Escribe tu apellido paterno..." required>
+        <br><br>
+
         <label>Apellido Materno</label>
-        <input type="text" name="apellido_m" placeholder="Escribe tu apellido Materno..." >
+        <input type="text" name="apellido_m" placeholder="Escribe tu apellido materno..." >
+        <br><br>
+
         <label>Edad</label>
         <input type="number" name="Edad" min="14" max="20" placeholder="Escribe tu edad..." required>
-        <label>Genero</label>
-        <input type="radio" name="genero" value="femenino"> femenino
-        <input type="radio" name="genero" value="masculino"> masculino
         <br><br>
+
+        <label>Genero</label>
+        <input type="radio" name="genero" value="Femenino"> Femenino
+        <input type="radio" name="genero" value="Masculino"> Masculino
+        <br><br>
+
         <label>Intereses</label>
         <input type="checkbox" name="Intereses" value="Futbol"> Futbol
         <input type="checkbox" name="Intereses" value="Basquetbol"> Basquetbol
         <input type="checkbox" name="Intereses" value="Videojuegos"> Videojuegos
         <input type="checkbox" name="Intereses" value="Musica"> Musica
+        <br><br>
+
         <button type="submit"> Guardar </button>
     </form>
 

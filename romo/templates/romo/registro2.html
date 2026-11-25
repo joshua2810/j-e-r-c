@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝙍𝙚𝙜𝙞𝙨𝙩𝙧𝙖 𝙩𝙪𝙨 𝙙𝙖𝙩𝙤𝙨</title>
+
+    <link rel="stylesheet" href="{% static 'romo/style.css' %}">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>𝙅𝙤𝙨𝙝𝙪𝙖 𝙀𝙢𝙢𝙖𝙣𝙪𝙚𝙡 𝙍𝙤𝙢𝙤 𝘾𝙖𝙧𝙧𝙖𝙣𝙯𝙖</h1>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <ul>
+                <li><a href="inicio">Inicio</a></li>
+                <li><a href="registro">registro</a></li>
+                <li><a href="registro2">registro 2</a></li>
+                <li><a href="#">tres</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form method="post">
+        <label>Nombre Completo</label>
+        <input type="text" name="Nombre" placeholder="Escribe tu nombre..." required>
+        <br><br>
+
+        <label>Edad</label>
+        <input type="number" name="Edad" min="1" max="122" placeholder="Escribe tu edad..." required>
+        <br><br>
+
+        <label>Fecha de nacimiento</label>
+        <input type="date" name="fecha_nacimiento" required>
+        <br><br>
+
+        <label>Correo Electronico</label>
+        <input type="email" name="Correo" placeholder="Escribe tu correo..." required>
+        <br><br>
+
+        <label>En que dispositivo estas haciendo la encuesta</label>
+        <input type="radio" name="dispositivo" value="celular"> celular
+        <input type="radio" name="dispositivo" value="tablet"> tablet
+        <input type="radio" name="dispositivo" value="computadora"> computadora
+        <br><br>
+
+        <label>Que tipo de pelicula te gustan mas</label>
+        <input type="checkbox" name="tipo_pelicula" value="Accion"> Accion
+        <input type="checkbox" name="tipo_pelicula" value="Comedia"> Comedia
+        <input type="checkbox" name="tipo_pelicula" value="Terror"> Terror
+        <br><br>
+        <input type="checkbox" name="tipo_pelicula" value="Animacion"> Animacion
+        <input type="checkbox" name="tipo_pelicula" value="Drama"> Drama
+        <input type="checkbox" name="tipo_pelicula" value="Aventura"> Aventura
+        <br><br>
+
+        <label>Como se llama tu artista favorito</label>
+        <input type="text" name="artista_favorito" placeholder="Escribe tu artista favorito..." required>
+        <br><br>
+
+        <label>En que año salio tu pelicula favorita</label>
+        <input type="number" name="anio_pelicula" min="1895" max="2026" placeholder="Escribe el año" required>
+        <br><br>
+
+        <button type="submit"> Guardar </button>
+    </form>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>𝙃𝙚𝙘𝙝𝙤 𝙥𝙤𝙧:
+           𝙅𝙤𝙨𝙝𝙪𝙖 𝙀𝙢𝙢𝙖𝙣𝙪𝙚𝙡 𝙍𝙤𝙢𝙤 𝘾𝙖𝙧𝙧𝙖𝙣𝙯𝙖</p>
+    </footer>
+
+</body>
+</html>
